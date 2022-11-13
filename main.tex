@@ -1,0 +1,80 @@
+\documentclass{beamer}
+
+\usetheme{Madrid}
+\usecolortheme{beaver}
+
+\title{Welcome to Beamer}
+\author{Szymon Hyziak}
+\date{November 2022}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\section{Introduction}
+\input{tex/current-section}
+
+\begin{frame}
+    \frametitle{Introduction}
+    Beamer is a package for creating presentations in \LaTeX. Use the frame environment to create slides.
+\end{frame}
+
+\section{Frames}
+\input{tex/current-section}
+
+\begin{frame}
+    \frametitle{Frames}
+    \begin{itemize}
+        \item Use \texttt{frametitle} to give the frame a title.
+        \pause
+        \item Then add content to the frame.
+    \end{itemize}
+\end{frame}
+
+\section{Columns}
+\input{tex/current-section}
+
+\begin{frame}
+    \frametitle{Columns}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            Use the columns and column environments to break the slide into columns.
+        \end{column}
+        \pause 
+        \begin{column}{0.5\textwidth}
+            The argument for each column determines its width. See also the \texttt{multicol} package, which automatically breaks your content into columns.
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\section{Highlights}
+\input{tex/current-section}
+
+\begin{frame}
+    \frametitle{HIghlights}
+    I should \emph{emphasise} that and this is an \alert{important} point. This is how to write text in \textbf{bold face} and text in \textit{italics}. I can also specify \textcolor{green}{color of the text} with \textcolor{orange}{American spelling}.
+\end{frame}
+
+\section{Blocks}
+\input{tex/current-section}
+
+\begin{frame}
+    \frametitle{A block environment makes a titled box.}
+    \begin{columns}
+        \begin{column}{0.45\textwidth}
+            \begin{block}{Interesting Fact}
+                This is interesting.
+            \end{block}
+        \end{column}
+        \pause
+        \begin{column}{0.45\textwidth}
+            \begin{alertblock}{Important Fact}
+                This is important.
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\end{document}
